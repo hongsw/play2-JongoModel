@@ -2,3 +2,19 @@ This is your new Play 2.1 application
 =====================================
 
 This file will be packaged with your application, when using `play dist`.
+
+
+ref
+https://github.com/bguerout/jongo-play2-spike
+
+http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/
+
+https://mongolab.com/welcome/
+
+http://stackoverflow.com/questions/14428452/play-framework-2-1-rc2-nosuchfielderrors-created-by-reverse-routing-in-templat
+
+https://github.com/bguerout/jongo/issues/104
+
+https://github.com/alexanderjarvis/play-jongo
+
+http://jongo.org/tags/0.2/0.2.html
