@@ -1,0 +1,22 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    </head>
+    <body>
+    	<div class="container">
+    	    <h1>Welcome. Play 2.1 World. (Mongodb + Heroku)</h1>
+        	@if(flash.get("success")) {
+                <div class="alert alert-success"><strong>Success ! </strong> @flash.get("success")</div>
+    		}
+    		@if(flash.get("info")) {
+    			<div class="alert alert-info"><strong>Information ! </strong> @flash.get("info")</div>
+    		}
+
+    	    @content
+        </div>
+    </body>
+</html>

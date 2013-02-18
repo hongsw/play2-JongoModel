@@ -1,0 +1,17 @@
+@(list: List[Guestbook])
+@main("GuestBooks") {
+	<ul class="media-list">
+	
+	@for(post <- list) {
+		<li class="post-@post._id">
+			<div class="media-body">
+				<span class="media-heading">@post.name</span>
+				<span class="info" >@post.postAt.format("yyyy MM dd")</span>
+				<span class="info" ><a href="mailto:@post.email">Contact</a></span>
+				<div>@post.content</div>
+			</div>
+		</li>
+	}
+	</ul>
+    <a href="@routes.Application.write()">Write</a>
+}

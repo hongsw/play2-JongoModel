@@ -1,0 +1,13 @@
+@(myForm: Form[Guestbook])
+@import helper._
+
+@main("GuestBook Form") {
+	@form(action = routes.Application.doWrite()) {
+    	@inputText(myForm("name"))
+    	@inputText(myForm("email"))
+    	@textarea(myForm("content"))
+    	@inputPassword(myForm("password"))
+    	<button type="submit" class="btn">Submit</button>
+    }
+    <a href="@routes.Application.index()">List</a>
+}
